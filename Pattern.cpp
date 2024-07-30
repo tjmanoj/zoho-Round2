@@ -18,6 +18,34 @@ int main()
     return 0;
 }
 
+// One for loop
+#include <iostream>
+using namespace std;
+
+int main() {
+    string str;
+    cin >> str;
+    int n = str.length();
+
+    for (int i = 0; i < n * n; i++) {
+        int row = i / n;
+        int col = i % n;
+
+        if (row == col || row + col == n - 1) {
+            string << str[col];
+        } else {
+            string << " ";
+        }
+
+        if (col == n - 1) {
+            string << endl;     //next line
+        }
+    }
+
+    return 0;
+}
+
+
 P     M
  R   A 
   O R  
