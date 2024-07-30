@@ -25,6 +25,7 @@ using namespace std;
 int main() {
     string str;
     cin >> str;
+    
     int n = str.length();
 
     for (int i = 0; i < n * n; i++) {
@@ -32,18 +33,19 @@ int main() {
         int col = i % n;
 
         if (row == col || row + col == n - 1) {
-            string << str[col];
+            cout << str[col];
         } else {
-            string << " ";
+            cout << " ";
         }
 
         if (col == n - 1) {
-            string << endl;     //next line
+            cout << endl;       //next line
         }
     }
 
     return 0;
 }
+
 
 
 P     M
